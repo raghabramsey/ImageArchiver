@@ -5,7 +5,7 @@ const archiver = require("archiver");
 class ImageArchiver {
   async start() {
     try {
-      await this.start12();
+      
       await this.start13();
       
     } catch (error) {
@@ -58,7 +58,7 @@ class ImageArchiver {
       archive.pipe(output);
 
       // append files from a sub-directory and naming it `new-subdir` within the archive (see docs for more options):
-      archive.directory(`Z:/Raghab`, false);
+      archive.directory(`Z:/Raghab1`, false);
       archive.finalize();
   }
 }
